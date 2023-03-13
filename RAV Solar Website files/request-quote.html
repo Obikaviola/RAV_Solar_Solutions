@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/rav-logo.jpg">
+    <title>Request Quote</title>
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <header class="d-flex bg-success justify-content-between p-3 col-md-12" style="position:fixed;">
+            <div class="logo d-flex mt-3">
+                <img src="images/rav-logo.jpg" style="width:40px; height:45px;" alt="brand logo of RAV solar" class="rounded-circle">
+                <h4 class="ps-3 text-warning pt-1">RAV Solar</h4>
+            </div>
+            <ul class="nav justify-content-end na">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-warning active">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="energy-solutions.html" class="nav-link text-warning">Energy Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="payment-model.html" class="nav-link text-warning">Payment Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="request-quote.html" class="nav-link text-warning">Request A Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a href="customers-review.html" class="nav-link text-warning">Customers Review</a>
+                </li>
+            </ul>
+        </header>
+        <main class="row px-5 mx-5 mt-5 mt-sm-0 mx-auto">
+            <div class="pt-5 mt-5 mt-sm-0">
+                <p class="display-6 text-center pt-5 mt-5 text-success">Kindly share your energy needs below, and we will send you a quote for the right solar systems</p>
+            </div>
+            <div class="row justify-content-around">
+                <form action="" class="row">
+                    <div class="my-5 row ps-4">
+                        <label for="available-budget" class="form-label h5">Which solar option from the price list below align with your available budget?</label>
+                        <select name="available-budget" id="available-budget" class="form-select form-select-lg">
+                            <option value="400000">400,000 - RAV 1.5KVA inverter system</option>
+                            <option value="700000">700,000 - RAV 1.5KVA solar system</option>
+                            <option value="450000">450,000 -RAV 2KVA inverter system</option>
+                            <option value="750000">750,000 - RAV 2KVA solar system</option>
+                            <option value="500000">500,000 - RAV 2.5KVA inverter system</option>
+                            <option value="800000">500,000 - RAV 2.5KVA solar system</option>
+                            <option value="700000">700,000 - RAV 3.5KVA inverter system</option>
+                            <option value="1500000">1,200,000 - RAV 3.5KVA solar system</option>
+                            <option value="900000">900,000 - RAV 5KVA inverter system</option>
+                            <option value="1500000">1,500,000 - RAV 5KVA solar system</option>
+                            <option value="1100000">1,100,000 - RAV 7.5KVA inverter system</option>
+                            <option value="2000000">2,000,000 - RAV 7.5KVA solar system</option>
+                            <option value="The system prices are all above my budget">The system prices are all above my budget</option>
+                        </select>
+                    </div>
+                    <div class="mb-5">
+                        <label for="payment" class="form-label h5">Worried about the cost? Would you like to pay in monthly installment up to 36 months?</label>
+                        <select name="payment" id="payment" class="form-select form-select-lg">
+                            <option value="yes">Yes! The installment payment option sounds good</option>
+                            <option value="no">No, would rather pay in full</option>
+                        </select>
+                    </div>
+                    <div class="mb-5">
+                        <label for="appliances" class="form-label h5">Do you need help with the suitable solar capacity? List the major appliances you want to power</label>
+                        <textarea name="appliances" id="appliances" cols="30" rows="5" class="form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="row justify-content-around mb-5">
+                        <div class="col-sm-5">
+                            <label for="name" class="form-label h5">Full Name</label>
+                            <input type="text" id="name" class="form-control form-control-lg" required>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="number" class="form-label h5">Phone Number</label><input class="form-control form-control-lg" id="number" type="tel" required>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-sm-5">
+                            <label for="email" class="form-label h5">Email address</label><input id="email" type="email" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="location" class="form-label h5">Location (city)</label><input id="location" class="form-control form-control-lg" type="address">
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <button class="btn col-sm-8 btn-success btn-lg my-5" type="submit">Request A Quote</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <hr>
+
+        <footer class="row px-3">
+            <div class="text-center col-sm-6 mt-5">
+                <p>Subscribe to get regular insights on renewable energy solutions for homes and businesses.</p>
+                <form action="" class="row text-center">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="col-sm-10 p-2 form-control">
+                    </div>
+                    
+                    <div>
+                        <input type="email" placeholder="Email Address" class="col-sm-10 mt-3 p-2 form-control">
+                    </div>
+                    <div>
+                        <button type="button" class="btn bg-success text-white mt-3 col-sm-10">Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center col-sm-6 mt-5">
+                <p>RAV solar solutions is a cleantech company offering sustainable solar solutions that are tailored to address pressing energy needs and deliver reliable 24/7 electricity to power various capacities of domestic appliances, office devices, and commercial equipment.</p>
+            </div>
+            <div class="col-sm-12 text-center mt-5">
+                <p>08024123333</p>
+                <p>08092308888</p>
+                <p>hello@ravsolarsolutions.com</p>
+                <p>Block 5, off Lekki Ajah express way, Lagos</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
